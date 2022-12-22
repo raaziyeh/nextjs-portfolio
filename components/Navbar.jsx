@@ -56,7 +56,7 @@ const Navbar = () => {
 					<div
 						className={
 							mobileNav
-								? "fixed top-0 left-0 z-[200] bg-[#ecf0f3] p-10 h-screen w-[80%] sm:w-[75%] md:w-[60%] lg:w-[45%] ease-in duration-500"
+								? "fixed top-0 left-0 z-[200] bg-[#ecf0f3] p-10 h-screen w-[90%] sm:w-[75%] md:w-[60%] lg:w-[45%] ease-in duration-500"
 								: "md:hidden fixed top-0 left-[-100%] z-[200] h-screen w-full"
 						}
 					>
@@ -128,7 +128,7 @@ const Navbar = () => {
 							<p className="mb-3 text-[#5B4EE4] uppercase tracking-widest">
 								Let's connect
 							</p>
-							<div className="flex gap-14 items-center">
+							<div className="flex gap-10 sm:gap-14 items-center justify-center">
 								<a
 									href="/"
 									rel="noopener noreferrer"
