@@ -1,8 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { BsFillPersonLinesFill } from "react-icons/bs"
+import { FaGithub, FaLinkedinIn, FaTelegramPlane } from "react-icons/fa"
 import { useState } from "react"
 
 const Navbar = () => {
@@ -73,7 +72,7 @@ const Navbar = () => {
 								onClick={toggleMobileNav}
 								className="cursor-pointer p-3 rounded-full shadow-lg shadow-gray-400"
 							>
-								<AiOutlineClose size={25} />
+								<AiOutlineClose size={22} />
 							</div>
 						</div>
 						<div className="border-b border-gray-300 my-4">
@@ -125,6 +124,41 @@ const Navbar = () => {
 								</li>
 							</Link>
 						</ul>
+						<div className="mt-8">
+							<p className="mb-3 text-[#5B4EE4] uppercase tracking-widest">
+								Let's connect
+							</p>
+							<div className="flex gap-14 items-center">
+								<a
+									href="/"
+									rel="noopener noreferrer"
+									className="p-3 rounded-full shadow-lg shadow-gray-400 ease-out duration-200 hover:scale-110"
+								>
+									<FaLinkedinIn />
+								</a>
+								<a
+									href="/"
+									rel="noopener noreferrer"
+									className="p-3 rounded-full shadow-lg shadow-gray-400 ease-out duration-200 hover:scale-110"
+								>
+									<AiOutlineMail />
+								</a>
+								<a
+									href="/"
+									rel="noopener noreferrer"
+									className="p-3 rounded-full shadow-lg shadow-gray-400 ease-out duration-200 hover:scale-110"
+								>
+									<FaTelegramPlane />
+								</a>
+								<a
+									href="/"
+									rel="noopener noreferrer"
+									className="p-3 rounded-full shadow-lg shadow-gray-400 ease-out duration-200 hover:scale-110"
+								>
+									<FaGithub />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
