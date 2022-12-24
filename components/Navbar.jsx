@@ -12,7 +12,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="fixed top-0 left-0 z-[100] h-20 w-full">
+			<div className="fixed top-0 left-0 h-20 w-full z-[100] bg-[#ECF0F3]">
 				<div className="flex items-center justify-between px-5 h-[100%] shadow-xl">
 					<div>
 						<Image
@@ -29,16 +29,16 @@ const Navbar = () => {
 								<Link href="/">Home</Link>
 							</li>
 							<li>
-								<Link href="/">About</Link>
+								<Link href="/#about">About</Link>
 							</li>
 							<li>
-								<Link href="/">Skills</Link>
+								<Link href="/#skills">Skills</Link>
 							</li>
 							<li>
-								<Link href="/">Projects</Link>
+								<Link href="/#projects">Projects</Link>
 							</li>
 							<li>
-								<Link href="/">Contact</Link>
+								<Link href="/#contact">Contact</Link>
 							</li>
 						</ul>
 						<div className="cursor-pointer md:hidden" onClick={toggleMobileNav}>
@@ -46,6 +46,8 @@ const Navbar = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* Mobile Navbar */}
 				<div
 					className={
 						mobileNav
@@ -82,47 +84,28 @@ const Navbar = () => {
 						</div>
 						<ul className="uppercase py-4">
 							<li onClick={() => setMobileNav(false)} className="py-4 text-sm">
-								<Link href="/"></Link>
-								Home
+								<Link href="/">Home</Link>
 							</li>
 
 							<li onClick={() => setMobileNav(false)} className="py-4 text-sm">
-								<Link href="/"></Link>
-								About
+								<Link href="/#about">About</Link>
 							</li>
 
-							<Link href="/">
-								<li
-									onClick={() => setMobileNav(false)}
-									className="py-4 text-sm"
-								>
-									Skills
-								</li>
-							</Link>
-							<Link href="/">
-								<li
-									onClick={() => setMobileNav(false)}
-									className="py-4 text-sm"
-								>
-									Projects
-								</li>
-							</Link>
-							<Link href="/">
-								<li
-									onClick={() => setMobileNav(false)}
-									className="py-4 text-sm"
-								>
-									Resume
-								</li>
-							</Link>
-							<Link href="/">
-								<li
-									onClick={() => setMobileNav(false)}
-									className="py-4 text-sm"
-								>
-									Contact
-								</li>
-							</Link>
+							<li onClick={() => setMobileNav(false)} className="py-4 text-sm">
+								<Link href="/#skills">Skills</Link>
+							</li>
+
+							<li onClick={() => setMobileNav(false)} className="py-4 text-sm">
+								<Link href="/#projects">Projects</Link>
+							</li>
+
+							<li onClick={() => setMobileNav(false)} className="py-4 text-sm">
+								<Link href="/">Resume</Link>
+							</li>
+
+							<li onClick={() => setMobileNav(false)} className="py-4 text-sm">
+								<Link href="/#contact">Contact</Link>
+							</li>
 						</ul>
 						<div className="mt-8">
 							<p className="mb-3 text-[#5B4EE4] uppercase tracking-widest">

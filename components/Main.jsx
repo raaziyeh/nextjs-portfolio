@@ -4,8 +4,8 @@ import React from "react"
 
 const Main = () => {
 	return (
-		<div className="w-100% h-screen flex items-center justify-center">
-			<div className="text-center p-3">
+		<div id="home" className="w-100% h-screen flex items-center justify-center">
+			<div className="text-center p-3 max-w-[1240px]">
 				<div className="uppercase tracking-widest text-gray-600">
 					let's build something together
 				</div>
