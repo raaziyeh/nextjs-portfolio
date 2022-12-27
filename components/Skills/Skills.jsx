@@ -28,7 +28,7 @@ const Skills = () => {
 					Skills
 				</p>
 				<h2 className="py-4">What I Can Do</h2>
-				<div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8 w-full">
+				<div className="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full">
 					{skillsList.map((skill) => (
 						<Skill name={skill.name} image={skill.image} key={skill.name} />
 					))}

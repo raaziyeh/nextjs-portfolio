@@ -3,7 +3,7 @@ import React from "react"
 
 const Skill = (props) => {
 	return (
-		<div className="flex items-center justify-between m-2 md:m-5 p-4 py-6 md:p-6 rounded-xl shadow-lg shadow-gray-400 hover:scale-105 ease-in duration-300 m-5">
+		<div className="flex items-center justify-between p-4 py-6 md:p-6 rounded-xl shadow-lg shadow-gray-400 hover:scale-105 ease-in duration-300">
 			<h3 className="text-sm md:text-base">{props.name}</h3>
 			<Image
 				src={props.image}

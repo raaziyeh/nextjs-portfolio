@@ -5,8 +5,8 @@ import AboutImg from "../public/assets/about.jpg"
 
 const About = () => {
 	return (
-		<div id="about" className="w-full md:h-screen">
-			<div className="w-full max-w-[1240px] p-4 py-16 md:flex items-center mx-auto gap-8">
+		<div id="about" className="w-full lg:h-screen">
+			<div className=" max-w-[1240px] w-full h-full p-4 py-16 mx-auto md:flex items-center gap-8">
 				<div className="flex-[2]">
 					<p className="uppercase text-xl tracking-widest text-[#5651e5]">
 						About
