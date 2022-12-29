@@ -53,7 +53,7 @@ const projectsList = [
 ]
 const Projects = () => {
 	return (
-		<div id="projects" className="w-full lg:h-screen my-10">
+		<div id="projects" className="w-full lg:min-h-screen my-10">
 			<div className="max-w-[1240px] w-full min-h-full p-4 py-16 mx-auto flex flex-col justify-center">
 				<p className="uppercase text-xl tracking-widest text-[#5651e5]">
 					Projects

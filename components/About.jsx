@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import AboutImg from "../public/assets/about.jpg"
+import AboutImg from "../public/assets/about.svg"
 
 const About = () => {
 	return (
@@ -27,8 +27,8 @@ const About = () => {
 						</p>
 					</Link>
 				</div>
-				<div className="hidden md:flex flex-1 p-2 shadow-lg shadow-gray-400 rounded-xl max-w-[300px] mx-auto mt-4">
-					<Image src={AboutImg} className="m-auto rounded-xl w-full" alt="/" />
+				<div className="hidden md:flex flex-1 p-2 max-w-[300px] mx-auto mt-4">
+					<Image src={AboutImg} className="m-auto w-full" alt="/" />
 				</div>
 			</div>
 		</div>
