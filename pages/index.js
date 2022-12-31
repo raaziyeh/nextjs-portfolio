@@ -1,6 +1,7 @@
 import Head from "next/head"
 import About from "../components/About"
 import Contact from "../components/Contact"
+import GoToTop from "../components/GoToTop"
 import Main from "../components/Main"
 import Navbar from "../components/Navbar"
 import Projects from "../components/Projects/Projects"
@@ -24,6 +25,7 @@ export default function Home() {
 				<Skills />
 				<Projects />
 				<Contact />
+				<GoToTop />
 			</main>
 		</div>
 	)
