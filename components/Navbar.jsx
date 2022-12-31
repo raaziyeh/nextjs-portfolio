@@ -2,18 +2,36 @@ import Image from "next/image"
 import Link from "next/link"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn, FaTelegramPlane } from "react-icons/fa"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Navbar = () => {
 	const [mobileNav, setMobileNav] = useState(false)
+	const [shadow, setShadow] = useState(false)
+
 	const toggleMobileNav = () => {
 		setMobileNav((prev) => !prev)
 	}
 
+	useEffect(() => {
+		const handleShadow = () => {
+			if (window.scrollY >= 90) {
+				setShadow(true)
+			} else {
+				setShadow(false)
+			}
+		}
+
+		window.addEventListener("scroll", handleShadow)
+	}, [])
+
 	return (
 		<>
 			<div className="fixed top-0 left-0 h-20 w-full z-[100] bg-[#ECF0F3]">
-				<div className="flex items-center justify-between px-5 h-[100%] shadow-xl">
+				<div
+					className={`flex items-center justify-between px-5 h-[100%] ${
+						shadow && "shadow-xl"
+					}`}
+				>
 					<div>
 						<Image
 							src="/../public/assets/navLogo.png"

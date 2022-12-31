@@ -8,7 +8,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 
 const Contact = () => {
 	return (
-		<div id="contact w-full lg:h-screen my-10">
+		<div id="contact" className="w-full lg:h-screen my-10">
 			<div className=" max-w-[1240px] w-full h-full p-4 py-16 mx-auto">
 				<p className="uppercase text-xl tracking-widest text-[#5651e5]">
 					Contact
