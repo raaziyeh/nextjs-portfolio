@@ -47,7 +47,7 @@ const projectsList = [
 		title: "Vanilla Portfolio",
 		tech: "Vanilla JS",
 		backgroundImg: vanillaPortfolioImg,
-		projectUrl: "/vanilla-portfolio",
+		projectUrl: "/vanillaPortfolio",
 		id: 6,
 	},
 ]

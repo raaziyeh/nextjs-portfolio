@@ -38,7 +38,7 @@ const Contact = () => {
 										<AiOutlineMail />
 									</a>
 								</div>
-								<a href="https://telegram.me/HiRaziyeh">
+								<a href="https://telegram.me/HiRaziyeh" target="_blank" rel="noopener noreferrer">
 									<div className="rounded-full shadow-lg shadow-gray-400 p-3 md:p-4 cursor-pointer hover:scale-110 ease-in duration-300">
 										<FaTelegramPlane />
 									</div>

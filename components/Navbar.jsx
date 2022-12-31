@@ -3,10 +3,14 @@ import Link from "next/link"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn, FaTelegramPlane } from "react-icons/fa"
 import { useState, useEffect } from "react"
+import { useRouter } from "next/router"
 
 const Navbar = () => {
 	const [mobileNav, setMobileNav] = useState(false)
 	const [shadow, setShadow] = useState(false)
+	const [bgColor, setBgColor] = useState("#ecf0f3")
+	const [textColor, setTextColor] = useState("#1f2937")
+	const router = useRouter()
 
 	const toggleMobileNav = () => {
 		setMobileNav((prev) => !prev)
@@ -24,9 +28,19 @@ const Navbar = () => {
 		window.addEventListener("scroll", handleShadow)
 	}, [])
 
+	useEffect(() => {
+		if (router.route === "/") {
+			setBgColor("#ecf0f3")
+			setTextColor("#1f2937")
+		} else {
+			setBgColor("transparent")
+			setTextColor("#ecf0f3")
+		}
+	}, [router])
+
 	return (
 		<>
-			<div className="fixed top-0 left-0 h-20 w-full z-[100] bg-[#ECF0F3]">
+			<div className={`fixed top-0 left-0 h-20 w-full z-[100] bg-[${bgColor}]`}>
 				<div
 					className={`flex items-center justify-between px-5 h-[100%] ${
 						shadow && "shadow-xl"
@@ -41,7 +55,7 @@ const Navbar = () => {
 							className="w-20 h-10 md:h-12 md:w-24"
 						/>
 					</div>
-					<div>
+					<div className={`text-[${textColor}]`}>
 						<ul className="hidden md:flex gap-10 uppercase">
 							<li>
 								<Link href="/">Home</Link>
@@ -145,7 +159,8 @@ const Navbar = () => {
 									<AiOutlineMail />
 								</a>
 								<a
-									href="/"
+									href="https://telegram.me/HiRaziyeh"
+									target="_blank"
 									rel="noopener noreferrer"
 									className="p-3 rounded-full shadow-lg shadow-gray-400 ease-out duration-200 hover:scale-110"
 								>

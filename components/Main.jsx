@@ -34,7 +34,8 @@ const Main = () => {
 						<AiOutlineMail />
 					</a>
 					<a
-						href="/"
+						href="https://telegram.me/HiRaziyeh"
+						target="_blank"
 						rel="noopener noreferrer"
 						className="p-4 rounded-full shadow-lg shadow-gray-400 ease-out duration-200 hover:scale-110"
 					>

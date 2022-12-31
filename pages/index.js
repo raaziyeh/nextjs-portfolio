@@ -3,7 +3,6 @@ import About from "../components/About"
 import Contact from "../components/Contact"
 import GoToTop from "../components/GoToTop"
 import Main from "../components/Main"
-import Navbar from "../components/Navbar"
 import Projects from "../components/Projects/Projects"
 import Skills from "../components/Skills/Skills"
 
@@ -19,7 +18,6 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<Navbar />
 				<Main />
 				<About />
 				<Skills />
