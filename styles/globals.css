@@ -1,9 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 html {
 	scroll-behavior: smooth !important;
+}
+
+#logo {
+	font-family: 'Permanent Marker', cursive;
 }
 
 @layer base {
@@ -33,6 +38,6 @@ html {
 	}
 
 	button {
-		@apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+		@apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-branding to-[#709dff] text-white;
 	}
 }

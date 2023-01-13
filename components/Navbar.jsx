@@ -46,15 +46,11 @@ const Navbar = () => {
 						shadow && "shadow-xl"
 					}`}
 				>
-					<div>
-						<Image
-							src="/../public/assets/navLogo.png"
-							alt="logo"
-							width="125"
-							height="60"
-							className="w-20 h-10 md:h-12 md:w-24"
-						/>
-					</div>
+					<Link href="/">
+						<div id="logo" className="text-branding text-[28px]">
+							RSM
+						</div>
+					</Link>
 					<div className={`text-[${textColor}]`}>
 						<ul className="hidden md:flex gap-10 uppercase">
 							<li>
@@ -95,13 +91,7 @@ const Navbar = () => {
 						}
 					>
 						<div className="flex items-center justify-between w-full">
-							<Image
-								src="/../public/assets/navLogo.png"
-								alt="logo"
-								width="80"
-								height="30"
-								className="w-20 h-10"
-							/>
+							<div id="logo">RSM</div>
 							<div
 								onClick={toggleMobileNav}
 								className="cursor-pointer p-3 rounded-full shadow-lg shadow-gray-400"
@@ -140,7 +130,7 @@ const Navbar = () => {
 							</li>
 						</ul>
 						<div className="mt-8">
-							<p className="mb-3 text-[#5B4EE4] uppercase tracking-widest">
+							<p className="mb-3 text-branding uppercase tracking-widest">
 								Let's connect
 							</p>
 							<div className="flex gap-10 sm:gap-14 items-center justify-center">
