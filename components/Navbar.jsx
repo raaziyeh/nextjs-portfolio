@@ -38,6 +38,14 @@ const Navbar = () => {
 		}
 	}, [router])
 
+	useEffect(() => {
+		if (mobileNav) {
+			document.body.style.overflow = "hidden"
+		} else {
+			document.body.style.overflow = "scroll"
+		}
+	}, [mobileNav])
+
 	return (
 		<>
 			<div className={`fixed top-0 left-0 h-20 w-full z-[100] bg-[${bgColor}]`}>
@@ -82,11 +90,12 @@ const Navbar = () => {
 							? "md:hidden fixed top-0 left-0 w-full h-screen bg-black/50"
 							: " "
 					}
+					onClick={() => setMobileNav(false)}
 				>
 					<div
 						className={
 							mobileNav
-								? "fixed top-0 left-0 z-[200] bg-[#ecf0f3] p-10 h-screen w-[90%] sm:w-[75%] md:w-[60%] lg:w-[45%] ease-in duration-500"
+								? "fixed top-0 left-0 z-[200] overflow-y-scroll bg-[#ecf0f3] p-10 h-screen w-[90%] sm:w-[75%] md:w-[60%] lg:w-[45%] ease-in duration-500"
 								: "md:hidden fixed top-0 left-[-100%] z-[200] h-screen w-full"
 						}
 					>

@@ -4,7 +4,10 @@ import React from "react"
 
 const Main = () => {
 	return (
-		<div id="home" className="w-100% h-screen flex items-center justify-center">
+		<div
+			id="home"
+			className="w-100% h-screen flex items-center justify-center tall: mt-10"
+		>
 			<div className="text-center p-3 max-w-[1240px]">
 				<div className="uppercase tracking-widest text-gray-600">
 					let's build something together
@@ -13,12 +16,12 @@ const Main = () => {
 					Hi, I'm <span className="text-branding">Raziyeh</span>
 				</h2>
 				<h1 className="pt-2">A Front-End Web Developer</h1>
-				<p className="text-gray-600 max-w-[70%] mx-auto py-6">
+				<p className="text-gray-600 max-w-[70%] mx-auto py-6 tall:hidden">
 					I’m focused on building responsive front-end web applications while
 					learning different computer science subjects and web development
 					technologies
 				</p>
-				<div className="py-4 mx-auto flex items-center justify-center gap-10 sm:gap-12 md:gap-16">
+				<div className="py-4 mx-auto flex items-center justify-center gap-10 sm:gap-12 md:gap-16 tall:mt-8">
 					<a
 						href="/"
 						rel="noopener noreferrer"

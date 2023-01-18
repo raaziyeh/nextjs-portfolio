@@ -9,6 +9,10 @@ module.exports = {
 			colors: {
 				branding: "#5651e5",
 			},
+			screens: {
+				tall: { raw: "(max-height: 500px)" },
+				// => @media (min-height: 800px) { ... }
+			},
 		},
 	},
 	plugins: [],
