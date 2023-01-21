@@ -25,7 +25,14 @@ const Navbar = () => {
 			}
 		}
 
+		const setBodyScroll = () => {
+			if (window.innerWidth > 768) {
+				setMobileNav(false)
+			}
+		}
+
 		window.addEventListener("scroll", handleShadow)
+		window.addEventListener("resize", setBodyScroll)
 	}, [])
 
 	useEffect(() => {
@@ -77,8 +84,11 @@ const Navbar = () => {
 								<Link href="/#contact">Contact</Link>
 							</li>
 						</ul>
-						<div className="cursor-pointer md:hidden" onClick={toggleMobileNav}>
-							<AiOutlineMenu size={25} />
+						<div
+							className={`cursor-pointer md:hidden`}
+							onClick={toggleMobileNav}
+						>
+							<AiOutlineMenu size={25} className={`text-[${textColor}]`} />
 						</div>
 					</div>
 				</div>
